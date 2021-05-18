@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/JonahNannepaga/smartcow-react-task1/static/css/main.cc74e36c.chunk.css",
+    "main.js": "/JonahNannepaga/smartcow-react-task1/static/js/main.7f26a86a.chunk.js",
+    "main.js.map": "/JonahNannepaga/smartcow-react-task1/static/js/main.7f26a86a.chunk.js.map",
+    "runtime-main.js": "/JonahNannepaga/smartcow-react-task1/static/js/runtime-main.d7f276d7.js",
+    "runtime-main.js.map": "/JonahNannepaga/smartcow-react-task1/static/js/runtime-main.d7f276d7.js.map",
+    "static/js/2.237148c6.chunk.js": "/JonahNannepaga/smartcow-react-task1/static/js/2.237148c6.chunk.js",
+    "static/js/2.237148c6.chunk.js.map": "/JonahNannepaga/smartcow-react-task1/static/js/2.237148c6.chunk.js.map",
+    "static/js/3.083a3e71.chunk.js": "/JonahNannepaga/smartcow-react-task1/static/js/3.083a3e71.chunk.js",
+    "static/js/3.083a3e71.chunk.js.map": "/JonahNannepaga/smartcow-react-task1/static/js/3.083a3e71.chunk.js.map",
+    "index.html": "/JonahNannepaga/smartcow-react-task1/index.html",
+    "static/css/main.cc74e36c.chunk.css.map": "/JonahNannepaga/smartcow-react-task1/static/css/main.cc74e36c.chunk.css.map",
+    "static/js/2.237148c6.chunk.js.LICENSE.txt": "/JonahNannepaga/smartcow-react-task1/static/js/2.237148c6.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/JonahNannepaga/smartcow-react-task1/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d7f276d7.js",
+    "static/js/2.237148c6.chunk.js",
+    "static/css/main.cc74e36c.chunk.css",
+    "static/js/main.7f26a86a.chunk.js"
+  ]
+}
