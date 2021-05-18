@@ -1,38 +1,178 @@
-.App {
-  text-align: center;
+/* Custom Styles */
+
+@font-face {
+  font-family: "ARS Maquette Pro Light";
+  src: url("//db.onlinewebfonts.com/t/4629c048a3822d4fed2b0472eb3e708f.eot");
+  src: url("//db.onlinewebfonts.com/t/4629c048a3822d4fed2b0472eb3e708f.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/4629c048a3822d4fed2b0472eb3e708f.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/4629c048a3822d4fed2b0472eb3e708f.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/4629c048a3822d4fed2b0472eb3e708f.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/4629c048a3822d4fed2b0472eb3e708f.svg#ARS Maquette Pro Light")
+      format("svg");
+}
+
+@font-face {
+  font-family: "ARS Maquette Pro Light Italic";
+  src: url("//db.onlinewebfonts.com/t/64327e375a92a66cab1ca557d12cfae0.eot");
+  src: url("//db.onlinewebfonts.com/t/64327e375a92a66cab1ca557d12cfae0.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/64327e375a92a66cab1ca557d12cfae0.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/64327e375a92a66cab1ca557d12cfae0.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/64327e375a92a66cab1ca557d12cfae0.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/64327e375a92a66cab1ca557d12cfae0.svg#ARS Maquette Pro Light")
+      format("svg");
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 70px;
   pointer-events: none;
+  display: block;
+  margin: auto;
+}
+
+.logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
+    -webkit-animation: App-logo-spin infinite 20s linear;
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 100px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  font-size: 16px;
+  color: #fff;
 }
 
 @keyframes App-logo-spin {
   from {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   to {
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+}
+
+.App-header h1 {
+  font-family: ARS Maquette Pro Light;
+  color: #61dafb;
+}
+
+.container {
+  margin: 100px auto 0;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  margin-left: 10%;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.sidebar.show ~ .card-wrapper {
+  margin-left: 0%;
+}
+
+.sidebar {
+  height: 100vh;
+  display: none;
+  background-color: #282c3493;
+  width: 20%;
+  padding: 2.5rem;
+  transform: translate(-100%, -82px);
+  transition: all 0.3s ease-out;
+}
+
+.sidebar.show {
+  display: block;
+  transform: translate(0%, -82px);
+}
+
+.nav-trigger {
+  position: absolute;
+  left: 10%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.nav-trigger svg {
+  font-size: 2rem;
+}
+
+.card {
+  width: 15%;
+  border: 2px solid #282c34;
+  padding: 2.5rem;
+  height: 5rem;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.card.blue-box {
+  border: 2px solid #61dafb;
+}
+.card h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-box {
+  width: 100%;
+  text-align: center;
+}
+
+.search-box input {
+  margin: 15px;
+  width: 20%;
+  height: 50px;
+  border: 1px solid #282c34;
+  padding: 0 1.5rem;
+  font-size: 1rem;
 }

@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# SmartCow - Task 1
+
+_Create the following layout_
+
+- The top bar must always stick to the top of the page.
+- The sidebar must be collapsible in desktop view(The content should flex accordingly) and not visible when in mobile view.
+- Implement an input that accepts a string and iterates a card for each letter entered, every third card should be highlighted with a different color.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
